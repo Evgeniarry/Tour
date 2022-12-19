@@ -39,6 +39,7 @@ namespace WindowsFormsApp1
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button3 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +51,7 @@ namespace WindowsFormsApp1
             this.rangeSlider1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.rangeSlider1.ForeColor = System.Drawing.Color.LightGray;
             this.rangeSlider1.HighlightedThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.rangeSlider1.Location = new System.Drawing.Point(761, 59);
+            this.rangeSlider1.Location = new System.Drawing.Point(12, 503);
             this.rangeSlider1.Maximum = 24;
             this.rangeSlider1.Minimum = 1;
             this.rangeSlider1.Name = "rangeSlider1";
@@ -68,7 +69,7 @@ namespace WindowsFormsApp1
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(830, 101);
+            this.textBox1.Location = new System.Drawing.Point(81, 545);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 15);
             this.textBox1.TabIndex = 1;
@@ -76,12 +77,14 @@ namespace WindowsFormsApp1
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 221);
+            this.dataGridView1.Location = new System.Drawing.Point(337, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1177, 432);
+            this.dataGridView1.Size = new System.Drawing.Size(884, 626);
             this.dataGridView1.TabIndex = 2;
+            
+
             // 
             // button1
             // 
@@ -95,7 +98,7 @@ namespace WindowsFormsApp1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1170, 49);
+            this.button2.Location = new System.Drawing.Point(69, 654);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(83, 49);
             this.button2.TabIndex = 4;
@@ -106,7 +109,7 @@ namespace WindowsFormsApp1
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(234, 72);
+            this.comboBox1.Location = new System.Drawing.Point(44, 126);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 5;
@@ -115,14 +118,14 @@ namespace WindowsFormsApp1
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(381, 74);
+            this.comboBox2.Location = new System.Drawing.Point(44, 197);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 6;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(1030, 72);
+            this.numericUpDown1.Location = new System.Drawing.Point(44, 599);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             1,
             0,
@@ -139,26 +142,35 @@ namespace WindowsFormsApp1
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(542, 72);
+            this.monthCalendar1.Location = new System.Drawing.Point(44, 258);
             this.monthCalendar1.MaxSelectionCount = 30;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 8;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(532, 659);
+            this.button3.Location = new System.Drawing.Point(708, 672);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 49);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Показать все туры";
+            this.button3.Text = "Забронировать";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(397, 672);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 15);
+            this.textBox2.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1275, 712);
+            this.ClientSize = new System.Drawing.Size(1275, 743);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.numericUpDown1);
@@ -191,6 +203,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
