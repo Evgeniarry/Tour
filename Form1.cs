@@ -188,7 +188,7 @@ namespace WindowsFormsApp1
 
                 //Заполнение строк таблицы
                 table.Rows.Add(tours[i].TravelCountry, tours[i].TravelCity, tours[i].Start, tours[i].CountOfNights,
-                tours[i].Hotel.nameOfHotel, stars, tours[i].cost);
+                tours[i].Hotel.nameOfHotel, stars, tours[i].Hotel.Cost);
             }
             dataGridView.DataSource = table;
             dataGridView.Columns[5].Width = 150;
